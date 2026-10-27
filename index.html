@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Explore television energy consumption by screen size, technology, brand, and energy rating."
+    >
+    <title>TV Energy Consumption</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/visualisations.css">
+
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__content">
+        <h1>TV Energy Consumption</h1>
+      </div>
+    </header>
+
+    <h2>Energy Consumption for different TV screen types and sizes</h2>
+    <p>TVs vary considerably in terms of energy consumption</p>
+
+    <div id="filters_screen"></div>
+
+    <div id="histogram" class="responsive-svg-container"></div>
+
+    <p>Screen size does not affect star rating for TVs</p>
+
+    <div id="scatterplot" class="responsive-svg-container"></div>
+    <div class="text_bottom">
+        <h3>Data source (Downloaded Jan 2025)</h3>
+        <a href = "https://data.gov.au/data/dataset/energy-rating-for-household-appliances">Energy Rating Data for household appliances - Televisions</a>
+    </div>
+
+    </main>
+
+    <footer class="page-footer">
+      <p>Data Visualisation Tutorial Week 6</p>
+    </footer>
+
+    <script src="https://d3js.org/d3.v7.min.js" defer></script>
+    <script src="js/load-data.js" defer></script>
+    <script src="js/shared-constants.js" defer></script>
+    <script src="js/interaction.js" defer></script>
+    <script src="js/histogram.js" defer></script>
+    <script src="js/scatterplot.js"></script>
+  </body>
+</html>
